@@ -30,5 +30,5 @@ function changePage(linkToOtherPage) {
     setTimeout(function() { window.location.replace(linkToOtherPage) }, 1300)
 }
 
-devBtn.addEventListener('click', () => changePage('/'))
+devBtn.addEventListener('click', () => changePage('/portifolio/'))
     // devBtn.addEventListener('click', () => changePage('/'))
