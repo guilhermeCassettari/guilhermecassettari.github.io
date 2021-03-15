@@ -130,7 +130,7 @@ menuUi.addEventListener('mouseleave', () => {
 menuDev.addEventListener('click', () => {
 
     changePageDev.forEach((item, i) => { setTimeout(function() { addClassActive(item) }, 250 * i) })
-    setTimeout(function() { window.location.replace('https://guilhermecassettari.github.io/portifotio/ui.html') }, 1300)
+    setTimeout(function() { window.location.replace('https://guilhermecassettari.github.io/portifolio/dev.html') }, 1300)
 })
 
 menuUi.addEventListener('click', () => {
