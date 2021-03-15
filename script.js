@@ -135,7 +135,7 @@ menuDev.addEventListener('click', () => {
 
 menuUi.addEventListener('click', () => {
     changePageUi.forEach((item, i) => { setTimeout(function() { addClassActive(item) }, 250 * i) })
-    setTimeout(function() { window.location.replace('https://guilhermecassettari.github.io/portifotio/ui.html' }, 1300)
+    setTimeout(function() { window.location.replace('https://guilhermecassettari.github.io/portifotio/ui.html') }, 1300)
 })
 
 
