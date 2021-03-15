@@ -130,12 +130,12 @@ menuUi.addEventListener('mouseleave', () => {
 menuDev.addEventListener('click', () => {
 
     changePageDev.forEach((item, i) => { setTimeout(function() { addClassActive(item) }, 250 * i) })
-    setTimeout(function() { window.location.replace('portifolio/dev.html') }, 1300)
+    setTimeout(function() { window.location.replace('/portifolio/dev.html') }, 1300)
 })
 
 menuUi.addEventListener('click', () => {
     changePageUi.forEach((item, i) => { setTimeout(function() { addClassActive(item) }, 250 * i) })
-    setTimeout(function() { window.location.replace('portifolio/ui.html') }, 1300)
+    setTimeout(function() { window.location.replace('/portifolio/ui.html') }, 1300)
 })
 
 
