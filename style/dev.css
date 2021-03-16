@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Mina', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #000;
+}
+
+main {
+  margin-top: 140px;
+}
+
+.title {
+  text-align: center;
+  font-family: Mina;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.card {
+  padding: 2vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100vw;
+  padding: 30px;
+  border-top: #fff 1px solid;
+  border-bottom: #fff 1px solid;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.part-one {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.part-one img {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-column-align: normal;
+      justify-self: normal;
+  width: 40vw;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.descriptionCard {
+  padding-left: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  width: 80%;
+  text-align: start;
+  font-family: Mina;
+  font-style: normal;
+  /* font-weight: bold; */
+  font-size: 25px;
+  line-height: 64px;
+  /* identical to box height */
+  letter-spacing: 0.1em;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.content-card {
+  padding: 50px 0 0 50px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+  width: 80%;
+  text-align: left;
+  font-family: Mina;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  /* transition: all 0.3s ease-in-out; */
+}
+
+.words-of-a-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.card:hover .content-card {
+  color: #000;
+}
+
+.card:hover .descriptionCard {
+  color: #000;
+}
+
+.card:hover img {
+  width: 50vw;
+}
+
+/* Partes do Header */
+.fill-hamburguer {
+  fill: #fff;
+}
+
+.fill-hamburguer.black {
+  fill: #000;
+}
+
+.fill-linkedin {
+  fill: #fff;
+  background-color: #fff;
+}
+
+.fill-linkedin.black {
+  fill: #000;
+}
+
+.fill-git {
+  fill: #fff;
+}
+
+.fill-git.black {
+  fill: #000;
+}
+
+.fill-facebook {
+  fill: #fff;
+}
+
+.fill-facebook.black {
+  fill: #000;
+}
+
+.fill-instagram {
+  fill: #fff;
+}
+
+.fill-instagram.black {
+  fill: #000;
+}
+
+.portifolio {
+  background-color: #000;
+}
+
+.change-page {
+  top: 0;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
+}
+
+.change-page.white {
+  background: #fff;
+}
+
+.change-page.black {
+  background: #000;
+}
+
+.change-page.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+/*# sourceMappingURL=dev.css.map */
