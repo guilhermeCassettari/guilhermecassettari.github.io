@@ -234,7 +234,7 @@ function enterContentOnScreen() {
         addClassActive(horizontalLineJobs)
 
         // Remover Skills
-        skillCards.forEach((item, i) => { setTimeout(function() { removeActive(item) }, 100 * i) })
+        // skillCards.forEach((item, i) => { setTimeout(function() { removeActive(item) }, 100 * i) })
 
     }
 
@@ -276,7 +276,7 @@ function enterContentOnScreen() {
         addColorBlackToSvg(fillInstagram)
 
         // Remover Skills
-        skillCards.forEach((item, i) => { setTimeout(function() { removeActive(item) }, 100 * i) })
+        // skillCards.forEach((item, i) => { setTimeout(function() { removeActive(item) }, 100 * i) })
 
     }
 }

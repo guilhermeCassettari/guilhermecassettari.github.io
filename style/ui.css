@@ -235,4 +235,42 @@ main {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
+
+@media (max-width: 475px) {
+  .title {
+    line-height: 50px;
+    padding-bottom: 20px;
+  }
+  .card {
+    padding: 10px 20px;
+  }
+  .part-one {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .part-one img {
+    width: 80%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .descriptionCard {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
 /*# sourceMappingURL=ui.css.map */
