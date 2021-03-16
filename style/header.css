@@ -1,0 +1,184 @@
+.linkedin,
+.git,
+.facebook,
+.instagram,
+.hamburguer {
+  width: 25px;
+  height: 25px;
+  margin-left: 25px;
+  display: inline-block;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-animation: icons 2s ease-in;
+          animation: icons 2s ease-in;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hamburguer.initial {
+  -webkit-animation: enterAnima 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          animation: enterAnima 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hamburguer:hover,
+.instagram:hover,
+.facebook:hover,
+.git:hover,
+.linkedin:hover {
+  cursor: pointer;
+  -webkit-animation: hoverBtn .5s ease-in-out infinite;
+          animation: hoverBtn .5s ease-in-out infinite;
+}
+
+@-webkit-keyframes hoverBtn {
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes hoverBtn {
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.instagram.initial {
+  -webkit-animation: enterAnima 1s ease-in-out;
+          animation: enterAnima 1s ease-in-out;
+}
+
+/* cubic-bezier( 0.175, 0.885, 0.32, 1.275 ) */
+.facebook.initial {
+  -webkit-animation: enterAnima 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          animation: enterAnima 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.git.initial {
+  -webkit-animation: enterAnima 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          animation: enterAnima 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.linkedin.initial {
+  -webkit-animation: enterAnima 2.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          animation: enterAnima 2.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@-webkit-keyframes enterAnima {
+  0% {
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes enterAnima {
+  0% {
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+header {
+  position: fixed;
+  width: 80vw;
+  padding: 20px 0;
+  margin: 0 10vw;
+  margin-top: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+}
+
+.hamburguer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hamburguer:hover {
+  cursor: pointer;
+}
+
+.portifolio {
+  font-size: 10px;
+  background-color: #000;
+  border: #fff 0.5px solid;
+  padding: 10px 30px;
+  /* border-radius: 10px; */
+  color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.portifolio.black {
+  color: #000;
+  background-color: #fff;
+  border: #000 1px solid;
+}
+
+.fill-hamburguer {
+  fill: #fff;
+}
+
+.fill-hamburguer.black {
+  fill: #000;
+}
+
+.fill-linkedin {
+  fill: #fff;
+  background-color: #000;
+}
+
+.fill-linkedin.black {
+  fill: #000;
+}
+
+.fill-git {
+  fill: #fff;
+}
+
+.fill-git.black {
+  fill: #000;
+}
+
+.fill-facebook {
+  fill: #fff;
+}
+
+.fill-facebook.black {
+  fill: #000;
+}
+
+.fill-instagram {
+  fill: #fff;
+}
+
+.fill-instagram.black {
+  fill: #000;
+}
+/*# sourceMappingURL=header.css.map */

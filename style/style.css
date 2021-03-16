@@ -567,7 +567,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("img/fundo-ui.jpg");
+  background: url("../img/fundo-ui.jpg");
   background-size: auto;
   color: #000;
   -webkit-transform: translateY(100vw);
@@ -623,7 +623,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("img/fundo-dev.jpg");
+  background: url("../img/fundo-dev.jpg");
   background-size: auto;
   color: #fff;
   -webkit-transform: translateY(-100vw);
