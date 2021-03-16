@@ -51,7 +51,6 @@ a {
           animation: enterAnima 1s ease-in-out;
 }
 
-/* cubic-bezier( 0.175, 0.885, 0.32, 1.275 ) */
 .facebook.initial {
   -webkit-animation: enterAnima 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           animation: enterAnima 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -126,19 +125,19 @@ header {
 
 .portifolio {
   font-size: 10px;
-  background-color: #000;
-  border: #fff 0.5px solid;
+  background-color: #fff;
+  border: #000 0.5px solid;
   padding: 10px 30px;
   /* border-radius: 10px; */
-  color: #fff;
+  color: #000;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
 .portifolio.black {
-  color: #000;
-  background-color: #fff;
-  border: #000 1px solid;
+  color: #fff;
+  background-color: #000;
+  border: #fff 1px solid;
 }
 
 .fill-hamburguer {
@@ -180,5 +179,30 @@ header {
 
 .fill-instagram.black {
   fill: #000;
+}
+
+@media (max-width: 485px) {
+  .linkedin,
+  .git,
+  .facebook,
+  .instagram {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+  }
+  header {
+    width: 100%;
+    margin: 0;
+  }
+  .portifolio {
+    padding: 7px 15px;
+  }
+  .hamburguer {
+    margin-right: 50px;
+  }
+  .hamburguer:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 /*# sourceMappingURL=header.css.map */
