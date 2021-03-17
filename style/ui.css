@@ -86,12 +86,23 @@ main {
           align-items: center;
 }
 
+.img-container {
+  position: relative;
+  overflow-x: hidden;
+  height: 300px;
+}
+
 .part-one img {
   -ms-flex-item-align: start;
       align-self: flex-start;
   -ms-grid-column-align: normal;
       justify-self: normal;
   width: 40vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  object-fit: cover;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }

@@ -298,13 +298,13 @@
                     </h2>
                     <form>
                         <label for="name" class="name form-words">Nome</label>
-                        <input type="text" id="name">
+                        <input id="nameFormEmail" type="text" id="name">
                         <label for="email">E-mail</label>
-                        <input type="text" id="email" class="email form-words">
+                        <input id="emailFormEmail" type="text" id="email" class="email form-words">
                         <label for="textArea" class="msg form-words" id="form">Mensagem</label>
-                        <textarea name="" id="textArea" cols="30" rows="10"></textarea>
+                        <textarea id="textformEmail" name="" id="textArea" cols="30" rows="10"></textarea>
 
-                        <input type="submit" value="Enviar" class="btn-form">
+                        <input type="submit" value="Enviar" class="btn-form" id="btnForm">
                     </form>
 
                 </div>
@@ -317,6 +317,7 @@
     </main>
 
     <script src="script/script.js "></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
