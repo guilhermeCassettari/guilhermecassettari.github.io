@@ -65,7 +65,7 @@ main,
     height: 100%;
     align-items: center;
     justify-content: center;
-    padding-bottom: 1vh;
+    padding-top: 150px;
 }
 
 .main-description {
@@ -75,7 +75,7 @@ main,
 .main-description .main-name {
     color: #686868;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 30px;
     line-height: 51px;
     letter-spacing: 0.1em;
     max-width: 28vw;
@@ -117,7 +117,7 @@ main,
     height: 188px;
     color: #fff;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 150%;
     letter-spacing: 0.1em;
     margin-bottom: 80px;
@@ -136,7 +136,7 @@ main,
 }
 
 .smile-face img {
-    width: 28vw;
+    width: 25vw;
 }
 
 
@@ -540,7 +540,7 @@ input {
         // height: 50vh;
     }
     .smile-face img {
-        width: 50vw;
+        width: 40vw;
     }
     .main-description {
         grid-row: 1/4;
