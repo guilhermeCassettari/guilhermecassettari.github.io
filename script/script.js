@@ -19,13 +19,20 @@ const fillFacebook = document.querySelectorAll('.fill-facebook')
 const fillInstagram = document.querySelectorAll('.fill-instagram')
 const portifolio = document.querySelector('#portifolio')
 
-// removendo animações iniciais
 const hamburguer = document.querySelector('.hamburguer')
 const instaram = document.querySelector('.instagram')
 const facebook = document.querySelector('.facebook')
 const git = document.querySelector('.git')
 const linkedin = document.querySelector('.linkedin')
 
+// Area do Form
+const nameFormEmail = document.querySelector('#nameFormEmail')
+const emailFormEmail = document.querySelector('#emailFormEmail')
+const textformEmail = document.querySelector('#textformEmail')
+const btnForm = document.querySelector('#btnForm')
+
+
+// removendo animações iniciais
 function removeInitialAnimation(item) {
     item.classList.remove('initial')
 }
@@ -279,4 +286,24 @@ function enterContentOnScreen() {
         // skillCards.forEach((item, i) => { setTimeout(function() { removeActive(item) }, 100 * i) })
 
     }
+}
+
+btnForm.addEventListener('click', (e) => {
+    e.preventDefault()
+    sendEmail()
+})
+
+function sendEmail() {
+    Email.send({
+            Host: "smtp.gmail.com",
+            Username: "motofoker@gmail.com",
+            Password: "_Google1418",
+            To: 'guizaocassettari@gmail.com',
+            From: emailFormEmail.value,
+            Subject: `E-mail enviado por ${nameFormEmail.value} pelo site do portifólio`,
+            Body: textformEmail.value,
+        })
+        .then(function(message) {
+            alert(`Muito obrigado ${nameFormEmail.value}, Logo Responderei seu email`)
+        });
 }

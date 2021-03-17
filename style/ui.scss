@@ -58,10 +58,20 @@ main {
     align-items: center;
 }
 
+.img-container {
+    position: relative;
+    overflow-x: hidden;
+    height: 300px;
+}
+
 .part-one img {
     align-self: flex-start;
     justify-self: normal;
     width: 40vw;
+    // height: 1000px;
+    object-fit: cover;
+    object-position: center;
+    object-fit: cover;
     transition: all 0.3s ease-in-out;
 }
 
